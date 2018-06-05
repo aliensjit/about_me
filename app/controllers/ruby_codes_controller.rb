@@ -1,0 +1,2 @@
+class RubyCodesController < ApplicationController
+end

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,700|Pacifico|Quicksand:400,700|Rubik:400,700|Scope+One|Trirong:400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	position: relative;
+}
+
+.all_about {
+	background: url(gray2);
+	text-align: center;
+}
+
+#logo {
+	max-width: 100px;
+	min-width: 100px;
+	margin: 0 auto;
+}
+#icons {
+	max-width: 50px;
+	min-width: 50px;
+	max-height: 50px;
+	min-height: 50px;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+}
+
+
+#etchasketch {
+	left: -60px;
+}
+#rps {
+	top: -50px;
+}
+#calc {
+	top: -100px;
+	right: -60px;
+}
+
+#etchasketch:hover, #rps:hover, #calc:hover {
+	filter: brightness(150%);
+}
+
+#intro {
+	font-family: Scope One, sans-serif;
+	font-size: 20px;
+	padding: 30px;
+}
+
+#description {
+	font-family: Quicksand;
+	padding: 20px;
+}
+
+li {
+	padding: 20px;
+}
+
+#footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+}
+
+.skills, .creations {
+	text-align: center;
+	font-size: 30px;
+	font-family: Scope One, sans-serif;
+	padding: 50px;
+	background: #5366ad;
+	color: white;
+}
+#html { grid-area: html;}
+#css { grid-area: css;}
+#javascript { grid-area: javascript;}
+#ruby { grid-area: ruby;}
+#ruby_on_rails { grid-area: ruby_on_rails;}
+#code { grid-area: code;}
+
+.skillset {
+	display: grid;
+	grid-template-areas:
+		'code code code code code code'
+		'html html css css javascript javascript'
+		'ruby ruby ruby ruby_on_rails ruby_on_rails ruby_on_rails';
+	text-align: center;
+	color: gray;
+	position: relative;
+}
+
+.skillset h2 {
+	font-family: Trirong, sans-serif;
+	font-size: 30px;
+	color: #807e7c;
+}
+
+#code {
+	font-family: Quicksand, sans-serif;
+	font-size: 20px;
+	padding-top: 30px;
+	color: #3ec96d;
+	margin-bottom: 30px;
+}
+
+.creations {
+	margin-top: 50px;
+	background: #db4639;
+}

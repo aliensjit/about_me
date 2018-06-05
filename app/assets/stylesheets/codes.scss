@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,700|Pacifico|Quicksand:400,700|Rubik:400,700|Scope+One|Trirong:400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+#previous, #next {
+	max-width: 50px;
+	min-width: 50px;
+	max-height: 50px;
+	min-height: 50px;
+	top: 250px;
+	margin: 0 auto;
+	filter: saturate(0);
+}
+
+a {
+	text-align: center;
+	top: 5px;
+	font-family: Rubik;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+}
+
+.title {
+	text-align: center;
+	font-family: Pacifico;
+	font-size: 20px;
+	background: url(gray2);
+	color: #5366ad;
+}
+
+.header_html {
+	background: #EF652A;
+	padding: 10px;
+}
+
+.header_css {
+	background: #369CD6;
+	padding: 10px;
+}
+
+.header_js {
+	background: #F9E418;
+	padding: 10px;
+}
+
+.header_ruby {
+	background: #EC1622;
+	padding: 10px;
+}
+#previous { grid-area: previous;}
+#code { grid-area: code;}
+#next { grid-area: next;}
+
+.main {
+	display: grid;
+	grid-template-areas: 'previous code next';
+	background: url(tex1);
+	padding-bottom: 20px;
+}
