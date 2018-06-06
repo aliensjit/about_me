@@ -9,7 +9,7 @@
 }
 
 .all_about {
-	background: url(gray1.jpg);
+	background: url(gray1);
 	text-align: justify;
 	padding: 30px;
 	padding-top: 0;
@@ -153,11 +153,11 @@
 	text-align: center;
 	padding-top: 120px;
 	padding-bottom: 120px;
-	background: url(gray3.png);
+	background: url(gray3);
 }
 
 .footer {
-	background: url(moon.jpg);
+	background: url(moon);
 	text-align: center;
 	padding: 80px;
 }
@@ -192,7 +192,7 @@
 	margin-right: 15px;
 }
 
-.contact:hover, .contact:click {
+.contact:hover {
 	filter: invert(70%);
 	transition: filter 0.3s;
 }
