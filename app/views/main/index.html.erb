@@ -1,30 +1,32 @@
 <div class='all_about'>
-		<div id='intro'>
-			<h1 style='color: #f05a78;'>Hello!</h1>
-			<h2>My name is <em>Jubille</em>. A.k.a. Alien.</h2><br/>
-			<div id='description'>
-				<h3>I am a junior full-stack developer who...</h3>
-				<br/>
-				<ul>
-					<li>can give you <strong>ideas</strong> you've never had time to think about,</li>
-					<li>loves to <strong>create</strong> original content,</li>
-					<li>enjoys working in a team of <strong>responsible</strong> people,</li>
-					<li><strong>respects</strong> time and effort of others,</li>
-					<li>has <strong>skills</strong> that is worth your time,</li>
-					<li>and loves to <strong>learn</strong> and keep an open mind.</li>
-				</ul>
+		<%= image_tag 'mypic.png', class: 'author_pic' %>
+		<div class='intro'>
+			<h1>Good day</h1>
+			<h2>I am <em>Jubille</em>. A.k.a. Alien Sjit.</h2><br/>
+			<div class='description'>
+				<h3>I'm a <strong>Junior Full-Stack Developer</strong> from the Philippines,</h3>
+				<h3>And I'd like to share my stuff with you!</h3>
+				<br/><br/>
+				<h4> I ...</h4>
+					<p>love to <strong>create</strong> original content,</p>
+					<p>enjoy working in a team of <strong>responsible</strong> people,</p>
+					<p><strong>respect</strong> the time and effort of others,</p>
+					<p>have <strong>skills</strong> that is worth your time,</p>
+					<p>and I love to <strong>learn</strong> and keep an open mind.</p>
 			</div>
 		</div>
 </div>
 
 <div id='all_skills'>
 	<div class='skills'>
-		<h3>Let me join your team, and I'll write you...</h3>
+		<h3>HOW CAN I HELP YOU?</h3>
+		<p>I write...</p>
 	</div>
 	<div class='skillset'>
 		<div id='code'>
 			<h1>Efficiently Versatile Code</h1>
 			<p>"What makes a good code good, is that it's correct and readable."</p>
+			<p>Click on the small icons to view some code!</p>
 		</div>
 
 		<div id='html'>
@@ -91,12 +93,46 @@
 
 <div class='all_creations'>
 	<div class='creations'>
-		<h3>These codes work!</h3>
-		<p>Scroll down to view on browser.</p>
+		<h3>VIEW THESE CODES IN ACTION</h3>
 	</div>
 	<div class='projects'>
+		<div>
+			<h2 class='tag'>Have something to Draw?</h2>
+			<br/>
+				<%= link_to 'https://aliensjit.github.io/Etch-A-Sketch/', id: 'proj_sketch' do %>
+				   	<%= image_tag 'etchasketch.png', class: 'proj' %>
+				<% end %>
+		</div>
+		<div>
+			<h2 class='tag'>Want to Play?</h2>
+				<%= link_to 'https://aliensjit.github.io/Rock-Paper-Scissors/', id: 'proj_rps'  do %>
+					<%= image_tag 'rps.png', class: 'proj' %>
+				<% end %>
+		</div>
+		<div>
+			<h2 class='tag'>Too lazy to Calculate?</h2>
+				<%= link_to 'https://aliensjit.github.io/Calculator/', id: 'proj_calc'  do %>
+				   	<%= image_tag 'calc.png', class: 'proj' %>
+				<% end %>
+		</div>
 	</div>
 </div>
 
+<div class='footer'>
+	<h1 id='contact_me'>Start a Project with Me</h1>
+		<%= link_to 'https://github.com/aliensjit' do %>
+			<%= image_tag 'git_logo.svg', class: 'contact' %>
+		<% end %>
+		<%= link_to 'https://www.facebook.com/jubille.alfeche' do %>
+			<%= image_tag 'fb_logo.png', class: 'contact' %>
+		<% end %>
+		<%= link_to 'https://www.reddit.com/user/AlienSjit/' do %>
+			<%= image_tag 'reddit.ico', class: 'contact' %>
+		<% end %>
+	<br/><br/>
+	<h2>Or mail me through</h2>
+	<h4>mycakereedusriggs@gmail.com</h4>
+	<h2 class='improv'>This website is being continually improved.</h1>
+</div>
 
 

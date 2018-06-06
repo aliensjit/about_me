@@ -1,2 +1,0 @@
-class CssCodesController < ApplicationController
-end
