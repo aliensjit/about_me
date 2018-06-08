@@ -1,138 +1,145 @@
-<div class='all_about'>
-		<%= image_tag 'mypic.png', class: 'author_pic' %>
-		<div class='intro'>
-			<h1>Good day</h1>
-			<h2>I am <em>Jubille</em>. A.k.a. Alien Sjit.</h2><br/>
-			<div class='description'>
-				<h3>I'm a <strong>Junior Full-Stack Developer</strong> from the Philippines,</h3>
-				<h3>And I'd like to share my stuff with you!</h3>
-				<br/><br/>
-				<h4> I ...</h4>
-					<p>love to <strong>create</strong> original content,</p>
-					<p>enjoy working in a team of <strong>responsible</strong> people,</p>
-					<p><strong>respect</strong> the time and effort of others,</p>
-					<p>have <strong>skills</strong> that is worth your time,</p>
-					<p>and I love to <strong>learn</strong> and keep an open mind.</p>
+<div class='navigate'>
+	<a href='#all_about'>About Me</a>
+	<a href='#all_skills'>How I can help you</a>
+	<a href='#all_creations'>My Projects</a>
+	<a href='#contact_me'>Contact Me</a>
+</div>
+<div class='content'>
+	<div id='all_about'>
+			<%= image_tag 'mypic.png', class: 'author_pic' %>
+			<div class='intro'>
+				<h1>Good day</h1>
+				<h2>I am <em>Jubille</em>.</h2>
+				<div class='description'>
+					<h3>I'm a <strong>Junior Full-Stack Developer</strong> from the Philippines,</h3>
+					<h3>And I'd like to share my stuff with you!</h3>
+					<br/><br/>
+					<h4> I ...</h4>
+						<p>love to <strong>create</strong> original content,</p>
+						<p>enjoy working in a team of <strong>responsible</strong> people,</p>
+						<p><strong>respect</strong> the time and effort of others,</p>
+						<p>have <strong>skills</strong> that is worth your time,</p>
+						<p>and I love to <strong>learn</strong> and keep an open mind.</p>
+				</div>
+			</div>
+	</div>
+
+	<div id='all_skills'>
+		<div class='skills'>
+			<h3>HOW CAN I HELP YOU?</h3>
+			<p>I write...</p>
+		</div>
+		<div class='skillset'>
+			<div id='code'>
+				<h1>Efficiently Versatile Code</h1>
+				<p>"What makes a good code good, is that it's correct and readable."</p>
+				<p>Click on the small icons to view some code!</p>
+			</div>
+
+			<div id='html'>
+				<h2>HTML</h2>
+		   		<div id='logo'><%= image_tag 'html_logo.png', class: 'img-responsive' %></div>
+		   		<br/><br/>
+		   		<div id='icons'>
+					<%= link_to '/codes/html1', id: 'etchasketch' do %>
+					   	<%= image_tag 'etchasketch.png', class: 'img-responsive' %>
+					<% end %>
+					<%= link_to '/codes/html2', id: 'rps' do %>
+						<%= image_tag 'rps.png', class: 'img-responsive' %>
+					<% end %>
+					<%= link_to '/codes/html3', id: 'calc' do %>
+					   	<%= image_tag 'calc.png', class: 'img-responsive' %>
+					<% end %>
+				</div>
+			</div>
+			<div id='css'>
+				<h2>CSS</h2>
+		   		<div id='logo'><%= image_tag 'css_logo.png', class: 'img-responsive' %></div>
+		   		<br/><br/>
+		   		<div id='icons'>
+					<%= link_to '/codes/css1', id: 'etchasketch' do %>
+					   	<%= image_tag 'etchasketch.png', class: 'img-responsive' %>
+					<% end %>
+					<%= link_to '/codes/css2', id: 'rps' do %>
+						<%= image_tag 'rps.png', class: 'img-responsive' %>
+					<% end %>
+					<%= link_to '/codes/css3', id: 'calc' do %>
+					   	<%= image_tag 'calc.png', class: 'img-responsive' %>
+					<% end %>
+				</div>
+		   	</div>
+
+			<div id='javascript'>
+				<h2>JavaScript</h2>
+		   		<div id='logo'><%= image_tag 'javascript_logo.png', class: 'img-responsive' %></div>
+		   		<br/><br/>
+				<div id='icons'>
+					<%= link_to '/codes/js1', id: 'etchasketch' do %>
+					   	<%= image_tag 'etchasketch.png', class: 'img-responsive' %>
+					<% end %>
+					<%= link_to '/codes/js2', id: 'rps' do %>
+						<%= image_tag 'rps.png', class: 'img-responsive' %>
+					<% end %>
+					<%= link_to '/codes/js3', id: 'calc' do %>
+					   	<%= image_tag 'calc.png', class: 'img-responsive' %>
+					<% end %>
+				</div>		
+			</div>
+			<div id='ruby'>
+				<h2>Ruby</h2>
+		   		<div id='logo'><%= image_tag 'ruby_logo.png', class: 'img-responsive' %></div>
+		   		<br/><br/>
+			</div>
+			<div id='ruby_on_rails'>
+				<h2>Ruby on Rails</h2>
+		   		<div id='logo'><%= image_tag 'rails_logo.png', class: 'img-responsive' %></div>
+		   		<br/><br/>
 			</div>
 		</div>
-</div>
-
-<div id='all_skills'>
-	<div class='skills'>
-		<h3>HOW CAN I HELP YOU?</h3>
-		<p>I write...</p>
 	</div>
-	<div class='skillset'>
-		<div id='code'>
-			<h1>Efficiently Versatile Code</h1>
-			<p>"What makes a good code good, is that it's correct and readable."</p>
-			<p>Click on the small icons to view some code!</p>
-		</div>
 
-		<div id='html'>
-			<h2>HTML</h2>
-	   		<div id='logo'><%= image_tag 'html_logo.png', class: 'img-responsive' %></div>
-	   		<br/><br/>
-	   		<div id='icons'>
-				<%= link_to '/codes/html1', id: 'etchasketch' do %>
-				   	<%= image_tag 'etchasketch.png', class: 'img-responsive' %>
-				<% end %>
-				<%= link_to '/codes/html2', id: 'rps' do %>
-					<%= image_tag 'rps.png', class: 'img-responsive' %>
-				<% end %>
-				<%= link_to '/codes/html3', id: 'calc' do %>
-				   	<%= image_tag 'calc.png', class: 'img-responsive' %>
-				<% end %>
+	<div id='all_creations'>
+		<div class='creations'>
+			<h3>VIEW THESE CODES IN ACTION</h3>
+		</div>
+		<div class='projects'>
+			<div>
+				<h2 class='tag'>Have something to Draw?</h2>
+				<br/>
+					<%= link_to 'https://aliensjit.github.io/Etch-A-Sketch/', id: 'proj_sketch' do %>
+					   	<%= image_tag 'etchasketch.png', class: 'proj' %>
+					<% end %>
+			</div>
+			<div>
+				<h2 class='tag'>Want to Play?</h2>
+					<%= link_to 'https://aliensjit.github.io/Rock-Paper-Scissors/', id: 'proj_rps'  do %>
+						<%= image_tag 'rps.png', class: 'proj' %>
+					<% end %>
+			</div>
+			<div>
+				<h2 class='tag'>Too lazy to Calculate?</h2>
+					<%= link_to 'https://aliensjit.github.io/Calculator/', id: 'proj_calc'  do %>
+					   	<%= image_tag 'calc.png', class: 'proj' %>
+					<% end %>
 			</div>
 		</div>
-		<div id='css'>
-			<h2>CSS</h2>
-	   		<div id='logo'><%= image_tag 'css_logo.png', class: 'img-responsive' %></div>
-	   		<br/><br/>
-	   		<div id='icons'>
-				<%= link_to '/codes/css1', id: 'etchasketch' do %>
-				   	<%= image_tag 'etchasketch.png', class: 'img-responsive' %>
-				<% end %>
-				<%= link_to '/codes/css2', id: 'rps' do %>
-					<%= image_tag 'rps.png', class: 'img-responsive' %>
-				<% end %>
-				<%= link_to '/codes/css3', id: 'calc' do %>
-				   	<%= image_tag 'calc.png', class: 'img-responsive' %>
-				<% end %>
-			</div>
-	   	</div>
+	</div>
 
-		<div id='javascript'>
-			<h2>JavaScript</h2>
-	   		<div id='logo'><%= image_tag 'javascript_logo.png', class: 'img-responsive' %></div>
-	   		<br/><br/>
-			<div id='icons'>
-				<%= link_to '/codes/js1', id: 'etchasketch' do %>
-				   	<%= image_tag 'etchasketch.png', class: 'img-responsive' %>
-				<% end %>
-				<%= link_to '/codes/js2', id: 'rps' do %>
-					<%= image_tag 'rps.png', class: 'img-responsive' %>
-				<% end %>
-				<%= link_to '/codes/js3', id: 'calc' do %>
-				   	<%= image_tag 'calc.png', class: 'img-responsive' %>
-				<% end %>
-			</div>		
-		</div>
-		<div id='ruby'>
-			<h2>Ruby</h2>
-	   		<div id='logo'><%= image_tag 'ruby_logo.png', class: 'img-responsive' %></div>
-	   		<br/><br/>
-		</div>
-		<div id='ruby_on_rails'>
-			<h2>Ruby on Rails</h2>
-	   		<div id='logo'><%= image_tag 'rails_logo.png', class: 'img-responsive' %></div>
-	   		<br/><br/>
-		</div>
+	<div class='footer'>
+		<h1 id='contact_me'>Start a Project with Me</h1>
+			<%= link_to 'https://github.com/aliensjit' do %>
+				<%= image_tag 'git_logo.svg', class: 'contact' %>
+			<% end %>
+			<%= link_to 'https://www.facebook.com/jubille.alfeche' do %>
+				<%= image_tag 'fb_logo.png', class: 'contact' %>
+			<% end %>
+			<%= link_to 'https://www.reddit.com/user/AlienSjit/' do %>
+				<%= image_tag 'reddit.ico', class: 'contact' %>
+			<% end %>
+		<br/><br/>
+		<h2>Or mail me through</h2>
+		<h4>mycakereedusriggs@gmail.com</h4>
+		<h2 id='improv'>This website is being continually improved.</h2>
 	</div>
 </div>
-
-<div class='all_creations'>
-	<div class='creations'>
-		<h3>VIEW THESE CODES IN ACTION</h3>
-	</div>
-	<div class='projects'>
-		<div>
-			<h2 class='tag'>Have something to Draw?</h2>
-			<br/>
-				<%= link_to 'https://aliensjit.github.io/Etch-A-Sketch/', id: 'proj_sketch' do %>
-				   	<%= image_tag 'etchasketch.png', class: 'proj' %>
-				<% end %>
-		</div>
-		<div>
-			<h2 class='tag'>Want to Play?</h2>
-				<%= link_to 'https://aliensjit.github.io/Rock-Paper-Scissors/', id: 'proj_rps'  do %>
-					<%= image_tag 'rps.png', class: 'proj' %>
-				<% end %>
-		</div>
-		<div>
-			<h2 class='tag'>Too lazy to Calculate?</h2>
-				<%= link_to 'https://aliensjit.github.io/Calculator/', id: 'proj_calc'  do %>
-				   	<%= image_tag 'calc.png', class: 'proj' %>
-				<% end %>
-		</div>
-	</div>
-</div>
-
-<div class='footer'>
-	<h1 id='contact_me'>Start a Project with Me</h1>
-		<%= link_to 'https://github.com/aliensjit' do %>
-			<%= image_tag 'git_logo.svg', class: 'contact' %>
-		<% end %>
-		<%= link_to 'https://www.facebook.com/jubille.alfeche' do %>
-			<%= image_tag 'fb_logo.png', class: 'contact' %>
-		<% end %>
-		<%= link_to 'https://www.reddit.com/user/AlienSjit/' do %>
-			<%= image_tag 'reddit.ico', class: 'contact' %>
-		<% end %>
-	<br/><br/>
-	<h2>Or mail me through</h2>
-	<h4>mycakereedusriggs@gmail.com</h4>
-	<h2 id='improv'>This website is being continually improved.</h1>
-</div>
-
 
