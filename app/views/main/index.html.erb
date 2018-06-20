@@ -1,28 +1,28 @@
 <div class='navigate'>
-	<a href='#all_about'>About Me</a>
-	<a href='#all_skills'>How I can help you</a>
-	<a href='#all_creations'>My Projects</a>
-	<a href='#contact_me'>Contact Me</a>
+	<a href='#all_about'>About Me` </a>
+	<a href='#all_skills'>How I can help you`  </a>
+	<a href='#all_creations'>Simple Apps` </a>
+	<a href='#personal_projects'>My Projects`  </a>
+	<a href='#contact_me'>Contact Me`</a>
 </div>
 <div class='content'>
 	<div id='all_about'>
-			<%= image_tag 'mypic.png', class: 'author_pic' %>
-			<a href='https://photos.app.goo.gl/TOILWfx87MJjOU2i2'>Curriculum Vitae</a>
 			<div class='intro'>
-				<h1>Good day</h1>
-				<h2>I am <em>Jubille</em>.</h2>
+				<h1>Hello, World</h1>
+				<h2>I am <em>Jubille Alfeche</em>.</h2>
 				<div class='description'>
 					<h3>I'm a <strong>Junior Full-Stack Developer</strong> from the Philippines,</h3>
 					<h3>And I'd like to share my stuff with you!</h3>
 					<br/><br/>
 					<h4> I ...</h4>
-						<p>love to <strong>create</strong> original content,</p>
+						<p>am an <strong>amateur</strong> but is very eager to improve,</p>
 						<p>enjoy working in a team of <strong>responsible</strong> people,</p>
 						<p><strong>respect</strong> the time and effort of others,</p>
-						<p>have <strong>skills</strong> that is worth your time,</p>
 						<p>and I love to <strong>learn</strong> and keep an open mind.</p>
 				</div>
-			</div>
+			</div><br/><br/>
+		<a href='https://photos.app.goo.gl/TOILWfx87MJjOU2i2'>Curriculum Vitae</a>
+
 	</div>
 
 	<div id='all_skills'>
@@ -105,29 +105,46 @@
 		</div>
 		<div class='projects'>
 			<div>
-				<h2 class='tag'>Have something to Draw?</h2>
+				<h2 class='tag'>Etch-A-Sketch</h2>
 				<br/>
 					<%= link_to 'https://aliensjit.github.io/Etch-A-Sketch/', id: 'proj_sketch' do %>
 					   	<%= image_tag 'etchasketch.png', class: 'proj' %>
 					<% end %>
+				<p class='tag'>Simple drawing app</p>
 			</div>
 			<div>
-				<h2 class='tag'>Want to Play?</h2>
+				<h2 class='tag'>Rock-Paper-Scissors</h2>
 					<%= link_to 'https://aliensjit.github.io/Rock-Paper-Scissors/', id: 'proj_rps'  do %>
 						<%= image_tag 'rps.png', class: 'proj' %>
 					<% end %>
+				<p class='tag'>Game with the computer as an opponent</p>
 			</div>
 			<div>
-				<h2 class='tag'>Too lazy to Calculate?</h2>
+				<h2 class='tag'>Calculator</h2>
 					<%= link_to 'https://aliensjit.github.io/Calculator/', id: 'proj_calc'  do %>
 					   	<%= image_tag 'calc.png', class: 'proj' %>
 					<% end %>
+				<p class='tag'>Compute with basic operations</p>
 			</div>
+			<div></div>
 		</div>
 	</div>
 
+	<div id='personal_projects'>
+		<div class='personal'><h3>Personal Projects</h3></div>
+			<div class='p_projects'>
+				<div></div>
+				<div><h2 class='tag'>Stylus</h2>
+					<%= link_to 'https://thestylus.herokuapp.com', id: 'proj_stylus' do %>
+						<%= image_tag 'cube.jpg', class: 'proj' %>
+					<% end %>
+				<p class='tag'>Literature and artwork sharing app</p>
+				<p class='tag'>-currently under development-</p></div>
+			</div>
+	</div>
+
 	<div class='footer'>
-		<h1 id='contact_me'>Start a Project with Me</h1>
+		<h1 id='contact_me'>Start a Project with Me</h1><br/><br/>
 			<%= link_to 'https://github.com/aliensjit' do %>
 				<%= image_tag 'git_logo.svg', class: 'contact' %>
 			<% end %>
@@ -139,7 +156,7 @@
 			<% end %>
 		<br/><br/>
 		<h2>Or mail me through</h2>
-		<h4>mycakereedusriggs@gmail.com</h4>
+		<h4>jubillealfeche@gmail.com</h4>
 		<h2 id='improv'>This website is being continually improved.</h2>
 	</div>
 </div>

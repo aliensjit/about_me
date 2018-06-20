@@ -12,9 +12,14 @@
 	min-width: 50px;
 	max-height: 50px;
 	min-height: 50px;
-	top: 250px;
 	margin: 0 auto;
 	filter: saturate(0);
+	position: fixed;
+	top: 250px;
+}
+
+#next {
+	right: 0px;
 }
 
 a {
@@ -22,7 +27,7 @@ a {
 	top: 5px;
 	font-family: Rubik;
 	font-size: 30px;
-	color: white;
+	color: #161616;
 	text-decoration: none;
 }
 
@@ -30,7 +35,7 @@ a {
 	text-align: center;
 	font-family: Pacifico;
 	font-size: 20px;
-	background: url(gray2);
+	background: url(tex1);
 	color: #5366ad;
 }
 
@@ -60,6 +65,11 @@ a {
 .main {
 	display: grid;
 	grid-template-areas: 'previous code next';
-	background: url(tex1);
+	background: url(gray), repeat(none);
 	padding-bottom: 20px;
+}
+
+.code_doc {
+	filter: invert(100%);
+	box-shadow: 0 0 10px 0 white;
 }
