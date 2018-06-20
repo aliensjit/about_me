@@ -18,6 +18,7 @@
 }
 
 html {
+	animation: in-fade 0.5s;
 	background: #2b2b2b;
 }
 
@@ -30,7 +31,6 @@ html {
 	text-align: center;
 	box-shadow: 0 0 5px 0 black;
 	filter: opacity(90%);
-	animation: in-fade 0.5s;
 }
 .navigate a {
 	color: white;
@@ -58,7 +58,6 @@ html {
 	box-shadow: 0 0 30px 0 black;
 	position: relative;
 	top: 50px;
-	animation: in-fade 0.5s;
 	transition: ease;
 }
 
