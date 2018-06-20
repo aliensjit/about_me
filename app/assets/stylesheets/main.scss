@@ -30,6 +30,15 @@ html {
 	border-radius: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
+	&:hover {
+		animation: color 1s infinite;
+	}
+}
+
+@keyframes color {
+	0% { background: #222323; }
+	50% { background: #718ebc; }
+	100% { background: #bc7171; }
 }
 
 .content {
@@ -57,7 +66,7 @@ html {
 	border-radius: 10px;
 	color: black;
 	&:hover {
-	box-shadow: 0 0 5px 0 black;
+		box-shadow: 0 0 5px 0 black;
 	}
 }
 
@@ -67,11 +76,25 @@ html {
 	padding: 30px;
 }
 
-.intro h1 {
+.intro_title {
+	margin: 0 auto;
 	color: #f05a78;
 	font-family: Anonymous Pro;
 	font-size: 50px;
 	padding-bottom: 20px;
+	animation: hello-world 3s steps(15) infinite;
+	transition: ease;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+@keyframes hello-world {
+	0% { width: 0; }
+	10% { width: 0; }
+	40% { width: 15ch; }
+	50% { width: 15ch; } 
+	100% { width: 0; }
 }
 
 .description {
@@ -121,12 +144,6 @@ html {
 	color: #807e7c;
 }
 
-#html, #css, #javascript, #ruby, #ruby_on_rails {
-	&:hover {
-		filter: opacity(80%);
-	}
-}
-
 #code {
 	font-family: Quicksand, sans-serif;
 	font-size: 16px;
@@ -155,6 +172,16 @@ html {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 10px;
 	padding-bottom: 20px;
+	transition: ease;
+	&:hover {
+		animation: size 1s infinite;
+	}
+}
+
+@keyframes size {
+	0% { max-width: 180px; }
+	50% { max-width: 190px; }
+	100% { max-width: 180px; }
 }
 
 @keyframes fade {
