@@ -58,7 +58,8 @@ html {
 	box-shadow: 0 0 30px 0 black;
 	position: relative;
 	top: 50px;
-	animation: in-fade 1s;
+	animation: in-fade 0.5s;
+	transition: ease;
 }
 
 #all_about {
