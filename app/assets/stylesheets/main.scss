@@ -185,6 +185,12 @@ html {
 	min-width: 85px;
 }
 
+#ruby {
+	&:hover {
+		filter: brightness(150%);
+	}
+}
+
 #icons {
 	max-width: 180px;
 	min-width: 180px;

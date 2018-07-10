@@ -51,6 +51,9 @@
 					<%= link_to '/codes/html3', id: 'calc' do %>
 					   	<%= image_tag 'calc.png', class: 'img-responsive' %>
 					<% end %>
+					<%= link_to '/codes/html4', id: 'calc' do %>
+					   	<%= image_tag 'lib.png', class: 'img-responsive' %>
+					<% end %>
 				</div>
 			</div>
 			<div id='css'>
@@ -66,6 +69,9 @@
 					<% end %>
 					<%= link_to '/codes/css3', id: 'calc' do %>
 					   	<%= image_tag 'calc.png', class: 'img-responsive' %>
+					<% end %>
+					<%= link_to '/codes/css4', id: 'calc' do %>
+					   	<%= image_tag 'lib.png', class: 'img-responsive' %>
 					<% end %>
 				</div>
 		   	</div>
@@ -84,11 +90,17 @@
 					<%= link_to '/codes/js3', id: 'calc' do %>
 					   	<%= image_tag 'calc.png', class: 'img-responsive' %>
 					<% end %>
+					<%= link_to '/codes/js4', id: 'calc' do %>
+					   	<%= image_tag 'lib.png', class: 'img-responsive' %>
+					<% end %>
 				</div>		
 			</div>
 			<div id='ruby'>
 				<h2>Ruby</h2>
-		   		<div id='logo'><%= image_tag 'ruby_logo.png', class: 'img-responsive' %></div>
+		   		<div id='logo'>
+		   			<%= link_to 'https://github.com/aliensjit/Ruby' do%>
+		   			<%= image_tag 'ruby_logo.png', class: 'img-responsive' %>
+		   			<% end %></div>
 		   		<br/><br/>
 			</div>
 			<div id='ruby_on_rails'>
@@ -126,7 +138,13 @@
 					<% end %>
 				<p class='tag'>Compute with basic operations</p>
 			</div>
-			<div></div>
+			<div>
+				<h2 class='tag'>Library</h2>
+					<%= link_to 'https://aliensjit.github.io/libraryOfTheCentury/', id: 'proj_lib'  do %>
+					   	<%= image_tag 'lib.png', class: 'proj' %>
+					<% end %>
+				<p class='tag'>Book shelf for your favorite books</p>
+			</div>
 		</div>
 	</div>
 
@@ -136,10 +154,11 @@
 				<div></div>
 				<div><h2 class='tag'>Stylus</h2>
 					<%= link_to 'https://thestylus.herokuapp.com', id: 'proj_stylus' do %>
-						<%= image_tag 'cube.jpg', class: 'proj' %>
+						<%= image_tag 'stylus.png', class: 'proj' %>
 					<% end %>
 				<p class='tag'>Literature and artwork sharing app</p>
 				<p class='tag'>-currently under development-</p></div>
+				<div></div>
 			</div>
 	</div>
 
